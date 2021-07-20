@@ -1,0 +1,58 @@
+age = int (input ("Please an age greater than 75: "))
+print()
+answer = input ("Have you been exposed to the COVID 19 ? type: 'yes' or 'no':  ")
+print()
+immune = input ("From your knowledge, is your immune system :,'weak' or 'strong':  ")
+print()
+smoke = input(" Have you ever smoked? type : 'yes' or 'no':  ")
+print()
+chronic = input (" are you suffering from any chonic diseases? type: 'yes' or 'no':  ")
+print()
+def true_risk(risk):
+  """  yes => True, no => False, whenever True and yes are compare it returns a True value
+        or whenever True and no are compared a False value is returned """
+
+  while  risk =="True" and answer == 'yes':
+        if age > 75 and immune == 'weak':
+          print( f" {risk} : The risk is HIGH because {immune} immune system",end="\n")
+        else:
+           print(' be careful',end='\n')
+        if age > 75 and smoke == 'yes':
+            print(f" {risk} : The risk is HIGH because {smoke} smoking",end='\n')
+        else:
+            print("No smoking good , becareful",end='\n')
+            if  age > 75 and chronic == 'yes':
+             print(f" {risk} : The risk is HIGH because {chronic} chronic disease",end='\n')
+            else:  print(" Keep eating healthy",end="\n")
+        print()
+        print(f" Since the risk is {risk} the possibility of catching covid is real",end='\n')
+        return
+true_risk("True")
+
+def false_risk(no_risk):
+  while  no_risk == "False" and answer == 'no':
+         if age > 75 and smoke == 'no':
+           print (f" {no_risk} : The risk is WAY LOWER because {smoke} smoking")
+           print()
+         else:
+           print("Well don't smoking")
+           print()
+         if age > 75 and immune == 'strong':
+            print(f" {no_risk} : The risk is WAY LOWER because {immune} immune system")
+            print()
+         else:
+            print('watch out')
+            print()
+         if age > 75 and chronic == 'no':
+             print(f" {no_risk} : The risk is WAY LOW because {chronic} chronic disease")
+             print()
+         else:
+             print('With chronic disease be careful')
+             print()
+         print(f" Since the risk is {no_risk} the possibility of catching covid19 is slim to none")
+         return
+false_risk("False")         
+
+     
+
+       
