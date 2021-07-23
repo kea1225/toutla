@@ -1,0 +1,13 @@
+
+
+count_fiiter =0
+total=0
+conv_count =0
+number = (input  ( "enter any number please:   "))
+for i in number:
+ conv_count= int(i)
+ count_fiiter = (conv_count ** len(number))
+ total += count_fiiter
+print(f"{total} is the armstrong of input NUMBER {number}")
+
+
