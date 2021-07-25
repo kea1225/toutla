@@ -1,0 +1,26 @@
+
+import sys
+import sympy
+def my_prime():
+ #Aprime number is diviable by1 and itself composite numbers
+    numero =int(input("Please pick a random number from your head:  "))
+    if numero <= 1:
+     return False
+    elif numero > 1 and numero %2 == 0:
+      print(" This is not a prime number, try another ")
+
+    return True
+sympy.my_prime(numero)
+     return True
+if True:
+      print(" {} My friend you entered a prime number".format(numero))
+elif False:
+        print(" BROTHERS AND SISTERS I DON'T KNOW WHAT THIS IS")
+my_prime()
+
+
+
+
+
+
+
